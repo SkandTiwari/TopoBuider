@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TopoBuilder – Login or Signup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right top, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .auth-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 12px 20px;
+      width: 100%;
+      background-color: #00ffc3;
+      border: none;
+      border-radius: 10px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00c99c;
+    }
+
+    .or {
+      margin: 20px 0;
+      color: #ccc;
+    }
+
+    .google-btn {
+      background: white;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .google-btn img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .google-btn:hover {
+      background: #e0e0e0;
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .footer-text a {
+      color: #00ffc3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Welcome to TopoBuilder</h2>
+    <form method="POST">
+      <input type="text" placeholder="Username or Email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="btn" type="submit">Login / Signup</button>
+    </form>
+
+    <div class="or">— or —</div>
+
+    <div class="google-btn" onclick="window.location.href='/accounts/google/login/'">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Google__G__Logo.svg" alt="Google logo">
+      Continue with Google
+    </div>
+
+    <div class="footer-text">
+      Don't have an account? <a href="#">Sign Up</a><br>
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+</body>
+</html>
